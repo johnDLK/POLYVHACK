@@ -12,6 +12,9 @@ As a developer, I am curious how to achieve. The truth is a video product by POL
 https://dev.polyv.net/2020/videoproduct/v-player-sdk/v-player-sdk-web/v-player-sdk-web-feature/play/
 
 
-
-
+function ban/banByLimitTime implement ban seek by setting this currentTime property. so reset ban_seek/ban_seek_by_limit_time to skip the video, set is_interaction as off to stop the popups.
+  
+However, If backend detection of video progress, you still can't skip, but we can set video triple speed:
+  
+`document.getElementsByTagName("video")[0].playbackRate = 3;`
 
